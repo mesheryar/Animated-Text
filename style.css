@@ -1,0 +1,26 @@
+.typing{
+    overflow: hidden;
+    border-radius: 0.15rem solid crimson;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    animation: typing 4s steps(30, end) infinite, blink 0.75s step-end infinite;
+    color:crimson;
+   
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 20%;
+    }
+}
+@keyframes blink{
+    from,
+    to{
+        border-color: transparent;
+    }
+    50%{
+        border-color: crimson;
+    }
+}
